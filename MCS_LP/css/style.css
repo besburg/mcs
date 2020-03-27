@@ -1,0 +1,16 @@
+.block {
+    width: 100%;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.block-one {
+    z-index: 100;
+}
+.block-two {
+    z-index: 200;
+}
+.block-three {
+    z-index: 300;
+}
