@@ -114,6 +114,10 @@ body p,table tr td{
     line-height: 1.5em;
 }
 
+.sec_info{
+    display: flex;
+    flex-direction: column;
+}
 .sec_about,.sec_menu,.sec_access{
     text-align: center;
 }
@@ -160,6 +164,9 @@ body p,table tr td{
 .sec_menu table,.sec_access table{
     line-height: 1.7rem;
     margin: 0 auto;
+}
+.sec_menu table{
+    width: 13rem;
 }
 .sec_menu table tbody{
     margin: 10px;
@@ -251,6 +258,9 @@ footer table{
     margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
+    .sec_info{
+        flex-direction: row;
+    }
     .sec_about p{
         text-align: center;
     }
@@ -273,18 +283,17 @@ footer table{
         padding: 0;
         margin: 0;
     }
+    .d-none{
+        display: none;
+    }
     footer tbody{
         display: flex;
     }
 }
 @media screen and (min-width: 1024px){
-    .sec_about-pc,.sec_access{
+    .sec_info,.sec_access{
         padding-right: 10em;
         padding-left: 10em;
     }
     
-}
-
-.sec_about-pc{
-    display: flex;
 }
